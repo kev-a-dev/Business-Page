@@ -6,4 +6,4 @@ Protoype client website I built to practice UI design. I tried to make it look a
 link: https://kev-a-dev.github.io/Doritos/
 ## Tech Stack
 
-HTML, CSS
+HTML, CSS, Javascript
