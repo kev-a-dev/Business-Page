@@ -660,6 +660,8 @@ hr {
   border-style: solid;
 }
 
+/* -------------------- MEDIA QUERY -------------------- */
+
 @media all and (max-width: 800px) {
   /* ---------- NAV ---------- */
   nav .container{
@@ -670,7 +672,7 @@ hr {
   nav .link-list {
     width: 100%;
   }
-
+  
   nav .link-list li {
     display: flex;
     justify-content: center;
