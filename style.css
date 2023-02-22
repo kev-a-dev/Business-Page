@@ -696,7 +696,8 @@ hr {
   
   #intro-section {
     width: 100%;
-    margin: 0;
+    margin: 50px 0 0 0;
+    scroll-margin: 50px;
   }
   
   #intro-section .container {
@@ -731,7 +732,7 @@ hr {
     margin: 10px 0;
   }
   
-  /* ---------- INTRO ---------- */
+  /* ---------- SERVICE ---------- */
   #service .column {
     display: flex;
     justify-content: center;
@@ -771,6 +772,9 @@ hr {
   }
   
   /* ---------- PRICING ---------- */
+  #pricing {
+    scroll-margin: 80px;
+  }
   #pricing .title {
     font-size: 40px;
     text-align: center;
