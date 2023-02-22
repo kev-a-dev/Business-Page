@@ -664,6 +664,10 @@ hr {
 
 @media all and (max-width: 800px) {
   /* ---------- NAV ---------- */
+  nav {
+    position: fixed;
+    top: 0;
+  }
   nav .container{
     height: 50px;
     display: flex;
