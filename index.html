@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doritos Picker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ca6df96af2.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
@@ -15,22 +17,23 @@
             <h1 class="logo">D</h1>
             <h1 class="logo-title">Doritos Picker</h1>
           </div>
+          <i class="fa-solid fa-bars"></i>
           <div class="link-list">
             <ul>
               <li>
                 <a href="#intro-section" class="nav-link">About</a>
               </li>
-              <li>
-                <a href="" class="nav-link">Blog</a>
+              <li title="This is just for show!">
+                <a class="nav-link">Blog</a>
               </li>
               <li>
                 <a href="#pricing" class="nav-link">Pricing</a>
               </li>
-              <li>
-                <a href="" class="nav-link">Contact Us</a>
+              <li title="This is just for show!">
+                <a class="nav-link">Contact Us</a>
               </li>
               <li>
-                <a href="" class="nav-link">Login</a>
+                <a title="This is just for show!" class="nav-link">Login</a>
               </li>
             </ul>
           </div>
@@ -50,7 +53,7 @@
             </p>
             <div class="search-wrapper">
               <input type="text" placeholder="Your Email Address" class="search-input">
-                <button>Get Started</button>            
+                <button title="This is just for show!">Get Started</button>            
               </input>
             </div>
             <div class="trusted-customers">
@@ -116,7 +119,7 @@
           <div class="left-side">
             <h1 class="title">Evaluated and Selected by <span class="color-text">Chip Connoisseurs</span></h1>
             <p class="info">Our chip connoisseurs are voluntarily given to us at birth and join our elite Chip Hypercritical Intellectual Protoge (CHIP) training. After 18 years, only 1 out of 1000 will succeed and join our elite team of Chip Connoisseurs, fit for picking chips. The failures move on to less impressive endeavors such as founding Google or joining the Navy SEALs.</p>
-            <button class="left-side-button">Learn More</button>
+            <button class="left-side-button" title="This is just for show!">Learn More</button>
           </div>
           <div class="right-side">
             <div class="img-wrapper">
@@ -135,19 +138,19 @@
             <div class="price-wrapper">
               <p class="p1">18 monthly payments</p>
               <h1 class="price">$80</h1>
-              <button class="price-button">Buy</button>
+              <button title="This is just for show!" class="price-button">Buy</button>
               <p class="info">Total Cost: $1440</p>
             </div>
             <div class="price-wrapper">
               <p class="p1">12 monthly payments</p>
               <h1 class="price">$100</h1>
-              <button class="price-button">Buy</button>
+              <button title="This is just for show!" class="price-button">Buy</button>
               <p class="info">Total Cost: $1200</p>
             </div>
             <div class="price-wrapper">
               <p class="p1">One time payment</p>
               <h1 class="price">$1000</h1>
-              <button class="price-button">Buy</button>
+              <button title="This is just for show!" class="price-button">Buy</button>
               <p class="info">Total Cost: $1000</p>
             </div>
           </div>
@@ -193,40 +196,32 @@
         <div class="column">
           <div class="title">Got <span class="color-text">Questions?</span></div>
           <div class="question-list">
-            <div class="question-wrapper">
-              <div class="bar">
-                <div class="question">What qualities do you look for when selecting a Dorito chip?</div>
-                <div class="img-wrapper">
-                  <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
-                </div>
+            <div class="question_wrapper" onclick="toggleAnswer(this)">
+              <div class="img-wrapper">
+                <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
               </div>
+              <div class="question">What qualities do you look for when selecting a Dorito chip?</div>
               <div class="answer">The most cheesy, well seasoned, and perfect triangle shaped chip that is free of cracks.</div>
             </div>
-            <div class="question-wrapper">
-              <div class="bar">
-                <div class="question">Why does 1 Dorito chip cost so much?</div>
-                <div class="img-wrapper">
-                  <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
-                </div>
+            <div class="question_wrapper" onclick="toggleAnswer(this)">
+              <div class="img-wrapper">
+                <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
               </div>
+              <div class="question">Why does 1 Dorito chip cost so much?</div>
               <div class="answer">It takes an immense amount of resources to train, feed, house, and educate a Chip Connoisseur. Not only do we prepare Chip Connoiseurs for picking chips, but we also equip them with the tools to succeed in life. Just look up Elon Musk, he is an alumni of our CHIP program. The costs are passed on to the consumer, you.</div>
             </div>
-            <div class="question-wrapper">
-              <div class="bar">
-                <div class="question">After selecting 1 chip do you really toss the rest of the Doritos bag?</div>
-                <div class="img-wrapper">
-                  <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
-                </div>
+            <div class="question_wrapper" onclick="toggleAnswer(this)">
+              <div class="img-wrapper">
+                <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
               </div>
+              <div class="question">After selecting 1 chip do you really toss the rest of the Doritos bag?</div>
               <div class="answer">Yes. We discard the rest by donating it to the homeless and we recycle the plastic Doritos bags. Jk, we just toss it outside the factory. Saving the environment isn't profitable.</div>
             </div>
-            <div class="question-wrapper">
-              <div class="bar">
-                <div class="question">Can anyone join your CHIP program?</div>
-                <div class="img-wrapper">
-                  <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
-                </div>
+            <div class="question_wrapper" onclick="toggleAnswer(this)">
+              <div class="img-wrapper">
+                <img class="arrow-img" src="assets\arrow.png" alt="" class="arrow">
               </div>
+              <div class="question">Can anyone join your CHIP program?</div>
               <div class="answer">Yes. As long as the individual starts before 1 year of age. Our rigorous program requires that we condition potential candidates as young as possible.</div>
             </div>
           </div>
@@ -239,27 +234,27 @@
           <div class="footer-list">
             <div class="col">
               <h3>Main</h3>
-              <a href="">Support</a>
-              <a href="">FAQs</a>
-              <a href="">About us</a>
+              <a>Support</a>
+              <a>FAQs</a>
+              <a>About us</a>
             </div>
             <div class="col">
               <h3>Team</h3>
-              <a href="">Career</a>
-              <a href="">Culture</a>
-              <a href="">Mission</a>
+              <a>Career</a>
+              <a>Culture</a>
+              <a>Mission</a>
             </div>
             <div class="col">
               <h3>Product</h3>
-              <a href="">Personal</a>
-              <a href="">Business</a>
-              <a href="">Team</a>
+              <a>Personal</a>
+              <a>Business</a>
+              <a>Team</a>
             </div>
             <div class="col">
               <h3>Press</h3>
-              <a href="">Events</a>
-              <a href="">Office</a>
-              <a href="">Media</a>
+              <a>Events</a>
+              <a>Office</a>
+              <a>Media</a>
             </div>
           </div>
           <hr>

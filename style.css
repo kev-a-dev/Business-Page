@@ -70,6 +70,12 @@ nav .logo-title {
   color: rgb(100, 100, 100);
 }
 
+nav .fa-bars {
+  font-size: 40px;
+  color: rgb(255, 132, 71);
+  display: none;
+}
+
 #intro-section .about {
   font-size: 20px;
   color: rgb(100, 100, 100);
@@ -517,39 +523,34 @@ nav li {
   justify-content: space-between;
 }
 
-.question-wrapper {
+.question_wrapper {
   background-color: rgb(244, 244, 244);
   border-radius: 10px;
   margin: 20px 0;
   max-width: 800px;
+  cursor: pointer;
+  position: relative;
 }
 
-.bar {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.bar .img-wrapper {
-  width: 100%;
-  height: 100%;
+.question_wrapper .img-wrapper {
   max-width: 40px;
   max-height: 40px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin: 10px 20px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: 6px 10px;
 }
 
 .arrow-img {
   width: 100%;
   height: 100%;
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  transition: 300ms;
 }
 
-.arrow-img:hover {
-  transform: rotate(360deg);
-  transition: all 300ms;
+.arrow-img.active {
+  transform: rotate(-360deg);
+  transition: 300ms;
 }
 
 .question {
@@ -561,7 +562,16 @@ nav li {
 .answer {
   font-size: 20px;
   line-height: 1.5;
-  margin: 10px 30px 20px;
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 30px;
+  transition: 300ms;
+}
+
+.answer.active {
+  max-height: 300px;
+  margin: 20px 30px;
+  transition: 300ms;
 }
 
 /* -------------------- FOOTER -------------------- */
@@ -651,51 +661,19 @@ hr {
 }
 
 
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (max-width: 1280px) {
+  
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  /* PRICING */
+@media all and (max-width: 800px) {
 
-  .price-container {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .price-wrapper {
-    margin: 20px;
-  }
-
-  #pricing .p1 {
-    font-size: 14px;
-    margin: 0 0 10px;
-  }
-
-  .price {
-    font-size: 24px;
-  }
-  
-  .price-wrapper .info {
-    font-size: 14px;
-  }
-
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .nav
-  
-  .price-container {
+  /* nav ul {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 300px;
   }
+
+  nav ul li {
+    margin: 10px;
+  } */
 }
 
-@media all and (max-width: 480px) {
-}
