@@ -1,5 +1,5 @@
 
-# Doritos Picker
+# Business Page Prototype
 
 Protoype client website I built to practice UI design.
 
